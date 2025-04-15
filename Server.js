@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 const VERIFICATION_TOKEN = 'ZtYxWvUtSrQpOnMlKjHgFdSaReWqXyTuv';
-const ENDPOINT_URL = 'https://ebay-webhook-gipf.onrender.com' //  update after deploy
+const ENDPOINT_URL = 'https://ebay-webhook-gipf.onrender.com/' //  update after deploy
 
 app.get('/notify', (req, res) => {
   const challengeCode = req.query.challenge_code;
